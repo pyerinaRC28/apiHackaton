@@ -27,6 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $monedas = $user['monedas'];
             $data = array(
                 'cod_alumno' => $cod_alumno,
+                'nombre' => $nombre,
+                'sede' => $sede,
+                'modalidad' => $modalidad,
+                'puntaje' => $puntaje,
+                'monedas' => $monedas
             );
 
             header("HTTP/1.1 200 OK");
